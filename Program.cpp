@@ -1,7 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <string>
-#include <vector>
 
 class Numbers
 {
@@ -31,7 +29,7 @@ int Factorial(int N)
 }
 
 
-int main()
+int main(int argc, char *argv[])
 {
     int N1, k=0, min_i = -1, min_j = -1, max_i = -1, max_j = -1, i_min = -1, i_max = -1;
     double R, min = 99999.99, max = -9999.99;
@@ -93,11 +91,8 @@ int main()
 
     std::cout;
     
-    std::cout<<"longer element = "<<array_2[i_max].arg<<", i is "<<max_i<<", j is "<<max_j<<"\n";
-    std::cout<<"closer element = "<<array_2[i_min].arg<<", i is "<<min_i<<", j is "<<min_j<<"\n";
-
-
-
+    std::cout<<"farthest sum = "<<array_2[i_max].arg<<", i is "<<max_i<<", j is "<<max_j<<"\n";
+    std::cout<<"closer sum = "<<array_2[i_min].arg<<", i is "<<min_i<<", j is "<<min_j<<"\n";
 
     return 0;
 }
